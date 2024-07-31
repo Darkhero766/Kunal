@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Frame 3D Website with CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <!-- Add a sky background -->
+        <a-sky color="#ECECEC"></a-sky>
+
+        <!-- Add a cube -->
+        <a-cube position="0 1 -5" rotation="0 45 0" color="#4CC3D9"></a-cube>
+
+        <!-- Add a cone -->
+        <a-cone position="2 1.25 -5" radius="1.25" color="#EF2D5E"></a-cone>
+
+        <!-- Add a tourous -->
+        <a-torous position="-1 0.75 -3" radius ="5.5" height="1.5" color="#FFC65D"></a-torous>
+
+        <!-- Add a plane as the ground -->
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+
+        <!-- Add a camera -->
+        <a-camera position="0 1.6 0">
+            <a-cursor></a-cursor>
+        </a-camera>
+    </a-scene>
+</body>
+</html>
